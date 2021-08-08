@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpals-"Share your ride!"</title>
+    <script src="https://kit.fontawesome.com/5de9ab161e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Help</li>
+        </ul>
+        <form id="navbar_form" action="#" method="post">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </form>
+        <button id="loginOption">Sign In!</button>
+    </nav>
+    <section id="mainbar">
+        <div class="mainSlides fade">
+            <div id="text1">
+                choose healthy and
+                <br> safe ride...
+                <br>
+                <button>Start Now!</button>
+            </div>
+            <img src="https://cdn.pixabay.com/photo/2014/09/03/20/15/shoes-434918__480.jpg" alt="img1"
+                style="width: 100%">
+        </div>
+        <div class="mainSlides fade">
+            <div id="text2">
+                find your partner
+                <br> in few minutes...!
+            </div>
+            <img src="https://media.istockphoto.com/photos/online-ride-sharing-and-carpool-mobile-application-rideshare-taxi-app-picture-id852475590?k=6&m=852475590&s=612x612&w=0&h=fJLPGVgGpewcACv0Tg9PqdxB9eNAynl56Awx2mfyS1I="
+                alt="img2" style="width: 100%">
+        </div>
+        <div class="mainSlides fade">
+            <div id="text3">
+                livelihood with carpals !
+            </div>
+            <img src="https://media.istockphoto.com/photos/women-in-car-rideshare-in-city-of-los-angeles-picture-id1139275583?k=6&m=1139275583&s=612x612&w=0&h=aFm713dYxS5FDgAyDmucwhu_iK2SQ_Np-ns2N7v_6Ok="
+                alt="img2" style="width: 100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+    <div id="secPart">
+        <img src="https://media.istockphoto.com/vectors/yellow-taxi-order-or-share-flat-line-illustration-vector-id1141727347?k=6&m=1141727347&s=612x612&w=0&h=1XpV9MIlY79RsUbX92pY3VDYcE5Sf3IAbyzkxoKnvno="
+            alt="">
+        <div>
+            <div id="textSec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatem recusandae ipsa
+                ape Lorem ipsum dolor sit amet. t. Accusantium, est?</div>
+            <form action="#" id="userinfo">
+                <div>
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                    <input type="text" placeholder="Start destination">
+
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <input type="text" placeholder="End destination">
+                </div>
+                <div><i class="fa fa-users" aria-hidden="true"></i><input type="number" placeholder="Passengers">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <input type="datetime" placeholder="Date/Time">
+                </div>
+                <button id="secPartBtn">
+                    <i class="fa fa-search" aria-hidden="true"></i>Search
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
