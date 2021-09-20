@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5de9ab161e.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #navbar
+        {
+            top:0;
+        }
+        #bodyContainer {
+            margin-left: 30%;
+            display: flex;
+            /* background-color: aquamarine; */
+            flex-direction: column;
+            margin-top: 10%;
+            width: 30%;
+            /* justify-content: center; */
+            align-items: center;
+            /* border: 2px solid gray; */
+            background-color: rgb(250, 240, 156);
+            box-shadow: 3px 3px 3px gray;
+            height: 60vh;
+        }
+
+        .containerHead {
+            margin: 20px 0px;
+            margin-top: 90px;
+        }
+
+        #bodyContainer input {
+            /* width: 20%; */
+            padding: 10px 20px;
+            margin: 0 10px;
+            outline: none;
+            background: none;
+            border: none;
+        }
+
+        .containerDiv {
+            border-bottom: 2px solid rebeccapurple;
+            /* width: 25%; */
+        }
+
+        
+        .main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn {
+
+
+            cursor: pointer;
+            outline: none;
+            margin: 12px 0;
+            padding: 5px 10px;
+            border: 2px solid rgb(3, 3, 3);
+            border-radius: 10px;
+            font-size: 18px;
+            background: none;
+            font-weight: bold;
+            width: 40%;
+        }
+        .btn:hover{
+            background-color: rgb(247, 248, 156);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="practice.html">Home</a></li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Help</li>
+        </ul>
+        <form id="navbar_form" action="#" method="post">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </form>
+        <a href="login.html"><button id="loginOption">Sign In!</button></a>
+    </nav>
+    <div id="bodyContainer">
+        <div class="main">
+            <h1 class="containerHead">Log In</h1>
+            <div class="containerDiv">
+                <i class="fa fa-user"></i>
+                <input type="email" name="email" id="name" placeholder="Enter your Email">
+            </div>
+            <div class="containerDiv">
+                <i class="fa fa-key" aria-hidden="true"></i>
+                <input type="password" name="password" id="password" placeholder="password">
+            </div>
+            <button class="btn">sign in</button>
+            <a href="sign up.html">Not have any account?</a>
+        </div>
+    </div>
+</body>
+
+</html>

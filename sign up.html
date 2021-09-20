@@ -1,0 +1,85 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            padding-top: 10%;
+            width: 50%;
+            margin-left: 20%;
+            /* align-items: center; */
+            padding: 5%;
+            padding-top: 10%;
+            justify-content: center;
+            /* background-color: antiquewhite; */
+        }
+        form
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        input,textarea
+        {
+            margin: 8px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+        #btn
+        {
+            background-color: rgb(248, 228, 52);
+            width: 20%;
+            margin-top: 3%;
+        }
+        #btn:hover
+        {
+            background-color: rgb(248, 164, 164);
+        }
+        #navbar_form
+        {
+            height: 29px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="practice.html">Home</a></li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Help</li>
+        </ul>
+        <form id="navbar_form" action="#" method="post">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </form>
+        <a href="login.html"><button id="loginOption">Sign In!</button></a>
+    </nav>
+    <div class="container">
+        <h1>Enter Details</h1>
+        <form action="/" method="POST">
+        <input type="text" name=name id="name" placeholder="enter your name">
+        <input type="text" name=age id="age" placeholder="enter your age">
+        <input type="text" name=gender id="gender" placeholder="enter your gender">
+        <textarea name="address" id="address" cols="30" rows="10" placeholder="enter your address"></textarea>
+        <p>upload licence/adharcard/pancard/any leagal doc file (not more than 10MB)</p>
+            <input type="file" id="myFile" name="filename">
+            
+        <button id="btn">submit</button>
+        </form>
+    </div>
+</body>
+</html>
